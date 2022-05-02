@@ -6,10 +6,10 @@ Fonts are separated by a | */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #a43994 ;
-  --secondary-color: #CEA07E ;
-  --accent1-color: #242F40;
-  --accent2-color: #3E5622;
+  --primary-color: #3E5622 ;
+  --secondary-color: #242F40 ;
+  --accent1-color: #CEA07E;
+  --accent2-color: #ffffff;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Bebas+Neue";
