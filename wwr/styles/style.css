@@ -1,0 +1,64 @@
+
+body {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #fcfbfb; 
+}
+header{
+    background-color:rgba(20,30,13, .7);
+}
+
+
+#background {
+    height: 725px;
+    background-color: #d9c2a3;
+}
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3;
+}
+.icon {
+    width: 80px;
+}
+nav a {
+    color: #fcfbfb;
+    text-align: center;
+    text-decoration: none;
+} 
+
+section {
+    text-align:center;
+}
+footer{
+    background-color:rgba(20,30,13, .7)
+}
+.msg{
+    background-color:rgba(20,30,13, .7);
+}
+.msg a{
+color:black;
+background-color: #d9c2a3;
+text-decoration: none;
+}
+h2{
+    color: white;
+}
+p{
+    color:#fcfbfb;
+}
+h3{
+    color:#d9c2a3;
+    text-decoration: none;
+}
+footer a{
+ color:#d9c2a3;
+ text-decoration: none;
+}
+.button-box a{
+    color:black;
+background-color: #d9c2a3;
+text-decoration: none;
+}
+hero-img images/hero.png{
+    max-width: 100%;
+}
