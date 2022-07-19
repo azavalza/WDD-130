@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <link rel="stylesheet" href="./styles/pagethree.css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img class="logo.img" src="./images/logo.png" alt="">
+        </a>
+        <nav>
+            <a href="index.html">Home </a>
+            <a href="pagetwo.html">Product</a>
+            <a href="pagethree.html">Buy Now</a>
+        </nav>
+    </header>
+    <main id="page3grid">
+        <h1>Why Lightdrop?</h1>
+        <p class="whylight">We have always wondered if there was a lantern that could do it all. A lantern that could be brought underwater, dropped, squeezed, emit heat. However, when we imagined all of this, we would imagine a monstrous light. At Lightdrop our goal was to make things simple and create a practical product that could adapt to anything. That is how the idea of lightdrop was turned on. Our product gives you the most with less. Lightdrop allows you to bring light to any situation without having to carry a heavy unconventional object. This is a product that adapts to your situation, and will never disappoint you. </p>
+        <img id="img1" src="./images/pose.jpg" alt="">
+
+        <h2>Buy Now</h2>
+
+
+        <div id="feedback"></div>
+                <form action="/my-handling-form-page" method="post">
+
+                    <ul>
+                        <li>
+                          <label for="name">Name:</label>
+                          <input type="text" id="name" name="user_name">
+                        </li>
+                        <li>
+                          <label for="lastname">Last name:</label>
+                          <input type="email" id="mail" name="user_email">
+                        </li>
+                        <li>
+                            <label for="lastname">Address:</label>
+                            <input type="email" id="mail" name="user_email">
+                          </li>
+                        <li>
+                          <label for="msg">Email</label>
+                          <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li>
+                            <label for="msg">Bank Information</label>
+                            <textarea id="msg1" name="user_message"></textarea>
+                          </li>
+                        <li class="button">
+                            <button type="submit">Buy Now</button>
+                          </li>
+                       </ul>
+
+                </form>
+
+
+    </main>
+    <footer>
+        <h3>ZagoLanterns©Alejandro-Zavalza</h3>
+        <h3><a href="personalsite-plan.html">Site Plan</a></h3>
+        
+        <div>
+            <a href="https://www.facebook.com/" target="_blank" >
+                <img src="./images/facebook.png" alt="Facebook Pic">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="./images/instagram.png" alt="Instagram Pic">  
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <img src="./images/twitter.png" alt="Twitter Pic">  
+            </a>
+
+        </div>
+
+    </footer>
+</body>
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Order Received'+ formElement.user_name.value +'! Thank you for ordering Lightdrop. Your order will arrive soon!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+</html>

@@ -1,0 +1,115 @@
+.img1 {
+    width: 100%;
+    grid-column: 1/3;
+    grid-row: 2/5;
+}
+.homegrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 70px;
+}
+.title{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+h2{
+    color: #f7ce00;
+}
+.hello{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    text-align: center;
+    margin: 1em auto;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+    
+}
+.headp{
+    grid-column: 1/3;
+    line-height: 60px;
+    color: white;
+    text-align: justify;
+}
+
+.videotext{
+    grid-column: 2/3;
+    grid-row: 6/7;
+    color: rgb(255, 255, 255);
+    line-height: 60px;
+    margin-left: 10px;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    grid-column: 1/3;
+    color: aliceblue;
+}
+.quoteone{
+    box-sizing: border-box;
+    background-color: #f7ce00;
+    text-align: center;
+    padding: 50PX;
+    font-size: 20px;
+}
+.quotetwo{
+    box-sizing: border-box;
+    background-color: #f7ce00;
+    text-align: center;
+    padding: 50PX;
+    font-size: 20px;
+}
+.quotethree{
+    box-sizing: border-box;
+    background-color: #f7ce00;
+    text-align: center;
+    padding: 50PX;
+    font-size: 20px;
+}
+.quotefour{
+    box-sizing: border-box;
+    background-color: #f7ce00;
+    text-align: center;
+    padding: 50PX;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(35, 35, 35);
+    margin: 0;
+    padding:0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: rgb(27, 27, 54);
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    padding: 25px 50px;
+    margin-top: 10px;
+    background-color: rgb(27, 27, 54);
+    color: white;
+}
+footer a{
+    color: white;
+}
+nav a{
+    color: white;
+}
+nav a:hover{
+    background-color: #f7ce00;
+}
